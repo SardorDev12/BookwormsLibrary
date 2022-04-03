@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO list</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="  crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="/assets/styles.css">
+    <script src="/assets/todo-list.js"></script>    
+</head>
+<body>
+    <div class="logo">
+    </div>
+    <div id="todo-table">
+        <form action="#">
+            <input type="text" name="item" placeholder="What book are you gonna read?" autocomplete="off" required>
+            <button type="submit" >Add to the list</button>
+        </form>
+        <div class="row">
+            <ul class="books-to-read">
+                <% for(let i = 0; i < data.booksToRead.length; i++){ %>
+                    <li class="to-read"><%= data.booksToRead[i].item %></li>
+                <% } %>
+            </ul>
+            <ul class="books-finished">
+                <p>Finished books</p>
+                <% for(let i = 0; i < data.finishedBooks.length; i++){ %>
+                    <li class="finished"><%= data.finishedBooks[i].item %></li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

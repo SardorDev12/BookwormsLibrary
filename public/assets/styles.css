@@ -1,0 +1,103 @@
+body{
+    background: #EFB61A;
+    font-family: tahoma;
+    color: #560622;
+}
+
+#todo-table{
+    position: relative;
+    box-shadow: 3px 3px 10px 3px black;
+    border-radius: 5px;
+    width: 95%;
+    background: #F6D579;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#todo-table form:after{
+    margin: 0;
+    content: '';
+    display: block;
+    clear: both;
+}
+
+input[type="text"]{
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #23282E;
+    border-radius: 4px;
+    background:#B9B26B;
+    float: left;
+    font-size: 20px;
+    color: #23282E;
+}
+::placeholder { 
+    color: #23282E;
+  }
+
+button{
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 4px;
+    width: 25%;
+    background: #23282e;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    background-color: #B9B26B;
+    border-radius: 5px;
+}
+
+li{
+    border: 0.1px solid #22250F;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+li.to-read:hover{
+    text-decoration: line-through;
+    background: rgba(0,0,0,0.2);
+}
+
+.h1{
+    background: url(/assets/logo.png) no-repeat center;
+    margin-bottom: 0;
+    text-indent: -10000px;
+}
+.logo {
+    width: 60%;
+    height: 60px;
+    background: url(/assets/logo.png) no-repeat center;
+    background-size: contain;
+    margin: 10px auto;
+    text-indent: -10000px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+.row ul.books-to-read {
+    flex: 5 1 100px; 
+}
+.row ul.books-finished p {  
+    padding: 1em;
+}
+.row ul.books-finished {
+    flex: 1 1 100px; 
+}
