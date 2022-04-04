@@ -14,4 +14,4 @@ Dependencies list
 
 Github link - https://github.com/SardorDev12/BookwormsLibrary
 
-Glitch link - https://nostalgic-sleepy-request.glitch.me
+Glitch link - https://bow-dirt-road.glitch.me/
